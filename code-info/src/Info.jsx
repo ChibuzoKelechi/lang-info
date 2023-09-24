@@ -38,14 +38,14 @@ const Lang = () => {
 
     return ( 
         <>
-        <article className="p-2 flex justify-evenly"> 
+        <article className="p-2 flex justify-evenly transition-all"> 
             <div>
-                <img src={lang.img} alt="" className="w-36 rounded-md"/>
+                <img src={lang.img} alt="" className="my-4 w-36 rounded-md"/>
             </div>
 
             <div className="w-4/5 px-5">
-                <h1 className="text-xl">{lang.language}</h1>
-                <h3>Used in {lang.use}</h3>
+                <h1 className="text-3xl font-extrabold py-1">{lang.language}</h1>
+                <h3 className="font-bold py-2 text-blue-100">Used in {lang.use}</h3>
                 <p>{lang.description}</p>
              
             
@@ -53,16 +53,16 @@ const Lang = () => {
               
         </article>
 
-            <div className="flex justify-evenly">
+            <div className="flex justify-evenly m-3">
             <button
-                className='bg-white p-1 text-blue-950 rounded-lg m-3' 
+                className='bg-blue-50 p-1 text-blue-950 rounded-lg m-3' 
             onClick={handlePrevClick}
             disabled={!hasPrev}
             >
             Previous</button>
 
             <button
-                className='bg-white p-1 text-blue-950 rounded-lg m-3' 
+                className='bg-blue-50 p-1 text-blue-950 rounded-lg m-3' 
                 onClick={handleNextClick}
                 disabled={!hasNext}
             >Next</button>   

@@ -1,7 +1,8 @@
-const Head = () => {
+const Head = ({time}) => {
     return ( 
         <header className="text-center font-bold text-xl">
             <div className="py-3">
+              <h1>{time}</h1>
               <h3 className="text-blue-100">CodeInfo</h3>
             </div>
 

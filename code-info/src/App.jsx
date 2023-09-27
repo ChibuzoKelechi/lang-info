@@ -1,14 +1,18 @@
 import './App.css'
-import Head from './Head'
-import Info from './Info'
+import Router from './Router'
+import Intro from './Head'
+// import Info from './Info'
 
 function App() {
 
   return (
-    <section className='h-screen bg-black text-white'>
-     <Head/>
-     <Info/>
-    </section>
+    <Router>
+      <section className='h-screen bg-black text-white'>
+      <Intro/>
+      {/* <Head/>
+      <Info/> */}
+      </section>
+   </Router>
   )
 }
 

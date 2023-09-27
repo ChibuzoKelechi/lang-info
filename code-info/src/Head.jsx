@@ -1,6 +1,7 @@
-const Head = ({time}) => {
+import { Link } from "react-router-dom";
+const intro = ({time}) => {
     return ( 
-        <header className="text-center font-bold text-xl">
+        <header className="text-center font-bold text-xl max-h-full bg-black text-white">
             <div className="py-3">
               <h1>{time}</h1>
               <h3 className="text-blue-100">CodeInfo</h3>
@@ -12,8 +13,9 @@ const Head = ({time}) => {
                 This website will guide you through the plethora of existing programming languages, their applications, learning resources, and also fun facts about them.
              </p>
             </div>
+            <Link to="/info">Programming languages</Link>
         </header>
      );
 }
  
-export default Head;
+export default Intro;

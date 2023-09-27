@@ -38,26 +38,26 @@ const Lang = () => {
 // const libraries = lang.frameworks;
 
     return ( 
-        <>
-        <article className="p-2 flex justify-evenly transition-all"> 
-            <div>
-                <img src={lang.img} alt="" className="my-4 w-36 rounded-md"/>
-            </div>
+        <section className="p-2 lang">
+            <article className="lang p-2 flex justify-evenly transition-all"> 
+                <div>
+                    <img src={lang.img} alt="" className="my-4 w-36 rounded-md"/>
+                </div>
 
-            <div className="w-4/5 px-5">
-                <h1 className="text-3xl font-extrabold py-1">{lang.language}</h1>
-                <h3 className="font-bold py-2 text-indigo-100">Used in {lang.use}</h3>
-                <p>{lang.description}</p>
-             
-            
-            </div>
-              
-        </article>
+                <div className="w-4/5 px-5">
+                    <h1 className="text-3xl font-extrabold py-1">{lang.language}</h1>
+                    <h3 className="font-bold py-2 text-indigo-100">Used in {lang.use}</h3>
+                    <p>{lang.description}</p>
+                
+                
+                </div>
+                
+            </article>
         <div className="flex justify-between p-2">
             <h2 className="font-bold">Popular libraries/frameworks</h2>
             <ul className="flex justify-evenly w-2/4 flex-nowrap">
                 {lang.frameworks.map((library, index) => (
-                    <li key={index} className="transition-all duration-75 text-indigo-100 text-lg  border-b border-b-indigo-200 hover:text-sky-200">{library}</li>
+                    <li key={index} className="transition-all duration-75 text-indigo-100 text-lg  hover:border-b hover:border-b-indigo-200 hover:text-sky-200">{library}</li>
                 ))}
             </ul>
         </div>
@@ -75,6 +75,6 @@ const Lang = () => {
                 disabled={!hasNext}
             >Next</button>   
             </div>
-            </>       
+            </section>       
      );
 };

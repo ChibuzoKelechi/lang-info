@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
-const intro = ({time}) => {
+const Intro = () => {
     return ( 
-        <header className="text-center font-bold text-xl max-h-full bg-black text-white">
+        <header className="text-center font-bold text-xl max-h-full text-white">
             <div className="py-3">
-              <h1>{time}</h1>
               <h3 className="text-blue-100">CodeInfo</h3>
             </div>
 
@@ -13,7 +12,12 @@ const intro = ({time}) => {
                 This website will guide you through the plethora of existing programming languages, their applications, learning resources, and also fun facts about them.
              </p>
             </div>
-            <Link to="/info">Programming languages</Link>
+
+            <div>
+               <Link to="/info" className="bg-blue-600 text-white p-2 rounded-xl mx-[45%]">Start</Link>
+
+            </div>
+            {/* <Link to="/info" className="text-xl cursor-pointer">Programming languages</Link> */}
         </header>
      );
 }

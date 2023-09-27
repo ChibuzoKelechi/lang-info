@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import Head from './Head'
+import Head from './Pages/Head'
 const Home = () => {
     return ( 
-        <section className="mh-full">
+        <section className="home p-3 mh-full w-full">
             <Head/>
-         <Link to="/info">Start</Link>
         </section>
      );
 }

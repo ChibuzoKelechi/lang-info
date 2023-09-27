@@ -1,6 +1,6 @@
 import './App.css'
 import Router from './Router'
-import Intro from './Head'
+import Intro from './Pages/Head'
 // import Info from './Info'
 
 function App() {
@@ -8,9 +8,7 @@ function App() {
   return (
     <Router>
       <section className='h-screen bg-black text-white'>
-      <Intro/>
-      {/* <Head/>
-      <Info/> */}
+        <Intro/>
       </section>
    </Router>
   )

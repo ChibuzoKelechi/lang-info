@@ -1,10 +1,12 @@
 // import coder from './assets/fingercoding.jpg'
 import { useState } from "react";
-import { languages } from "./data";
+import { languages } from "../data";
+import { Link } from "react-router-dom";
 
 const Info = () => {
     return ( 
-        <main>
+        <main className="p-3">
+            <Link to="/" className="p-2 rounded-xl my-2 mx-auto transition-all ease hover:text-xl hover:text-blue-500 hover:border-b-2 border-blue-500 text-lg cursor-pointer">Home</Link>
          <Lang/>
             {/* <img src={coder} alt="laptop" className='w-48 rounded-lg object-cover h-48'/> */}
         </main>
@@ -45,7 +47,7 @@ const Lang = () => {
                 </div>
 
                 <div className="w-4/5 px-5">
-                    <h1 className="text-3xl font-extrabold py-1">{lang.language}</h1>
+                    <h1 className="text-3xl font-extrabold py-1 text-blue-600">{lang.language}</h1>
                     <h3 className="font-bold py-2 text-indigo-100">Used in {lang.use}</h3>
                     <p>{lang.description}</p>
                 

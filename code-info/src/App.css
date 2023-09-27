@@ -19,3 +19,14 @@
   opacity:1;
  }
 }
+
+.home{
+  min-height: 100vh;
+  background-color: black;
+background-color: ;
+  background-image: 
+  linear-gradient(black, rgba(0, 3, 10, 0.897)),
+  url('/src/assets/codinghand.jpg');
+  display: grid;
+  place-items: center;
+}

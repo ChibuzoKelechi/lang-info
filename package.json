@@ -2,5 +2,8 @@
   "dependencies": {
     "framer-motion": "^10.16.4",
     "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "react-router-dom": "^6.16.0"
   }
 }

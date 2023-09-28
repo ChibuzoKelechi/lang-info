@@ -14,8 +14,11 @@ const Intro = () => {
             </div>
 
             <div>
-               <Link to="/info" className="bg-blue-600 text-white p-2 rounded-xl mx-[45%]">Start</Link>
+              <Link to="/about" className="hover:bg-blue-600 text-blue-200 p-2 rounded-xl my-2">Learn more...</Link>
+            </div>
 
+            <div>
+               <Link to="/info" className="bg-blue-600 text-white p-2 rounded-xl mx-[45%]">Start</Link>
             </div>
             {/* <Link to="/info" className="text-xl cursor-pointer">Programming languages</Link> */}
         </header>

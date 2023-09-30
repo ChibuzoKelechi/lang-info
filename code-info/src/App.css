@@ -35,7 +35,10 @@ header > *{
 }
 
 .about{
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
+  min-height: 100vh; 
+}
+
+.div{
+  min-height: 20vh; 
+  padding-top: 10rem;
 }

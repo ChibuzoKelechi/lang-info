@@ -37,8 +37,6 @@ const Lang = () => {
     }
   }
 
-// const libraries = lang.frameworks;
-
     return ( 
         <section className="p-2 lang">
             <article className="lang p-2 flex justify-evenly transition-all"> 

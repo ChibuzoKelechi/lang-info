@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+// import { GiGamepad  } from "react-icons/gi";
+
 const Intro = () => {
     return ( 
         <header className="text-center font-bold text-xl max-h-full text-white">
@@ -18,7 +20,10 @@ const Intro = () => {
             </div>
 
             <div>
-               <Link to="/info" className="bg-blue-600 text-white p-2 rounded-xl mx-[45%]">Start</Link>
+               <Link to="/info" className="bg-blue-600 text-white p-2 rounded-xl">
+                  {/* <GiGamepad/> */}
+                  Play
+               </Link>
             </div>
             {/* <Link to="/info" className="text-xl cursor-pointer">Programming languages</Link> */}
         </header>

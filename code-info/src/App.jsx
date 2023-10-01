@@ -2,18 +2,17 @@ import './App.css'
 import Router from './Router'
 import Intro from './Pages/Head'
 // import Info from './Info'
-import NavBar from "./Components/NavBar";
+// import NavBar from "./Components/NavBar";
 
 
 function App() {
 
   return (
     <Router>
-     <NavBar/>
-      <section className='h-screen bg-black text-white'>
-        <Intro/>
-      </section>
-   </Router>
+        <section className='h-screen bg-black text-white'>
+          <Intro/>
+        </section>
+     </Router>
   )
 }
 

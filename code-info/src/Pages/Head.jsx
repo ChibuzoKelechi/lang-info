@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import { GiGamepad  } from "react-icons/gi";
 
 const Intro = () => {
     return ( 
@@ -16,16 +15,14 @@ const Intro = () => {
             </div>
 
             <div>
-              <Link to="/about" className="hover:bg-blue-600 text-blue-200 p-2 rounded-xl my-2">Learn more...</Link>
+              <Link to="/about" className="hover:bg-blue-400 text-blue-200 p-2 rounded-xl my-2">Learn more...</Link>
             </div>
 
             <div>
                <Link to="/info" className="bg-blue-600 text-white p-2 rounded-xl">
-                  {/* <GiGamepad/> */}
                   Play
                </Link>
             </div>
-            {/* <Link to="/info" className="text-xl cursor-pointer">Programming languages</Link> */}
         </header>
      );
 }

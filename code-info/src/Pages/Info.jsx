@@ -1,6 +1,6 @@
 // import coder from './assets/fingercoding.jpg'
 import { useState } from "react";
-import { languages } from "../data";
+import { languages } from "../DataFiles/data";
 import { Link } from "react-router-dom";
 
 const Info = () => {
